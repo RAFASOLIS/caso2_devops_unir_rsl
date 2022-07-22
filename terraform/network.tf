@@ -35,7 +35,7 @@ resource "azurerm_network_interface" "myNic1" {
     name                           = "myipconfiguration1"
     subnet_id                      = azurerm_subnet.mySubnet.id 
     private_ip_address_allocation  = "Static"
-    private_ip_address             = "10.0.1.10"
+    private_ip_address             = "10.0.0.4"
     public_ip_address_id           = azurerm_public_ip.myPublicIp1.id
   }
 
