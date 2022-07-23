@@ -11,7 +11,7 @@ resource "azurerm_linux_virtual_machine" "myVM1" {
     disable_password_authentication = true
 
     admin_ssh_key {
-        username   = "adminUsername"
+        username   = "rafael"
         public_key = file("~/.ssh/id_rsa.pub")
     }
 
