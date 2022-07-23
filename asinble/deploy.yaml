@@ -3,7 +3,7 @@
 - name: deploying ansible examples
   hosts: ansiblecontroller
   vars_files:
-    - "group_vars/ansible-examples.yaml"
+    - "group_vars/docker.yaml"
   gather_facts: false
   roles:
-    - ansible-examples
+    - docker
